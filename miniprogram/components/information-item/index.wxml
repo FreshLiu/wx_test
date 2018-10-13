@@ -1,9 +1,0 @@
-<view class='information-item-container' wx:for="{{columns}}" wx:key="{{index}}">
-    <view class='information'>
-        <view class='title' wx:if="{{item.title}}">{{item.title}}</view>
-        <view class='content' wx:if="{{item.content}}">{{item.content}}</view>
-    </view>
-    <view class='handle' wx:if="{{item.handle}}">
-        <button class='handleButton' bindtap='handleEvent' data-handle-type="{{item.handle}}" data-index="{{index}}">{{item.handle}}</button>
-    </view>
-</view>
