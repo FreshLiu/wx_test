@@ -1,0 +1,61 @@
+.container {
+    background: #f7f7f7;
+}
+
+.container .main {
+    padding-top: 40rpx;
+    background: linear-gradient(180deg, rgba(237, 238, 242, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.container .detail-information {
+    background: #f7f7f7;
+}
+
+.container .show-details {
+    text-align: center;
+    padding: 24rpx 0;
+}
+
+.container .show-details .text-content {
+    height: 38rpx;
+    font-size: 24rpx;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: #888;
+    line-height: 38rpx;
+    margin-right: 6rpx;
+}
+
+.container .handle {
+    display: flex;
+    background: #fff;
+    padding: 40rpx 32rpx;
+    margin-bottom: 20rpx;
+}
+
+.container .handle .share-card {
+    margin-right: 35rpx;
+}
+
+.container .handle .share-card {
+    flex: 1;
+    font-size: 32rpx;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: #1aad19;
+    border: 2rpx solid #1aad19;
+}
+
+.container .handle .save {
+    flex: 1;
+    font-size: 32rpx;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: #1aad19;
+    border: 2rpx solid #1aad19;
+}
+
+.container .handle .hover-button {
+    background: #1aad19;
+    color: #fff;
+}
