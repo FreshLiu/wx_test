@@ -1,0 +1,25 @@
+<view class='container'>
+    <view class='main'>
+        <view class='card-container'>
+            <card title="{{information.title}}" name="{{information.name}}" position="{{information.position}}" avatar="{{information.avatar}}" telephone="{{information.telephone}}" email="{{information.email}}"></card>
+        </view>
+        <view class='show-details' bindtap='toggle'>
+            <text class='text-content' wx:if="{{!togglePull}}">展示全部名片信息</text>
+            <text class='text-content' wx:if="{{togglePull}}">收起以下名片信息</text>
+            <icon wx:if="{{!togglePull}}" type='info' size='15'></icon>
+            <icon wx:if="{{togglePull}}" type='warn' size='15'></icon>
+        </view>
+    </view>
+    <view class='detail-information' wx:if="{{togglePull}}">
+        <information-item columns="{{detail}}"></information-item>
+    </view>
+    <view class='handle'>
+        <button class='share-card button' open-type='share' hover-class='hover-button' plain='{{true}}'>分享名片</button>
+        <button class='save button' hover-class='hover-button' plain='{{true}}'>存入手机通讯录</button>
+    </view>
+    <view class='personal-introduce'>
+        <h5>个人简介</h5>
+        <text>大家好，我是Udesk智能名片</text>
+        <p>You don’t need to have a full time ecommerce business to earn a little extra money through your website. You don’t even need to be there all the time. All you need to do is wait for the day your advertisers will pay you.</p>
+    </view>
+</view>

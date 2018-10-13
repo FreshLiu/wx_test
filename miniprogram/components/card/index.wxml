@@ -1,0 +1,26 @@
+<view class='card-container'>
+    <view class='content-top'>
+        <view class='text-content'>
+            <view>
+                <text class='title' wx:if="{{title}}">{{title}}</text>
+            </view>
+            <view>
+                <text class='name' wx:if="{{name}}">{{name}}</text>
+                <text class='position' wx:if="{{position}}">{{position}}</text>
+            </view>
+        </view>
+        <view class='avatar' wx:if="{{avatar}}">
+            <image class='avatarImage' src='{{avatar}}'></image>
+        </view>
+    </view>
+    <view class='content-bottom'>
+        <view class='telephone' wx:if="{{telephone}}">
+            <icon size='14' type='success' class='telephone-icon'></icon>
+            <text class='telephone-number'>{{telephone}}</text>
+        </view>
+        <view class='email' wx:if="{{email}}">
+            <icon size='14' type='success' class='email-icon'></icon>
+            <text class='email-account'>{{email}}</text>
+        </view>
+    </view>
+</view>

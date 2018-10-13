@@ -1,0 +1,9 @@
+
+{
+    "navigationBarBackgroundColor":"#ffffff",
+    "navigationBarTextStyle":"black",
+    "usingComponents":{
+        "card":"../../../../components/card/index",
+        "information-item":"../../../../components/information-item/index"
+    }
+}
